@@ -1,2 +1,2 @@
-# Weather-App
-A website that shows the current weather for any place is made using the OpenWeatherMap API.
+# Weather-App 
+You'll need to utilise HTML, JavaScript, and CSS to construct a website that uses the OpenWeatherMap API in VSCode to display the current weather. The webpage's structure, including a field for the city name, a search button, and a container for the weather data, will be contained in the HTML file. The styling of the website will be handled by the CSS file. The retrieval of the weather information from the API and subsequent updating of the website will be handled by the JavaScript file. To make API requests, you'll need an API key, which you can get from OpenWeatherMap. Based on the user-entered city, the JavaScript code will make an API call to get the weather data, and after updating the webpage with the temperature and a description of the current weather.
