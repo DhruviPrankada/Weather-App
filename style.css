@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Papyrus;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    font-size: 170%;
+  }
+  
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2em;
+  }
+  .weather-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 50px;
+    height: 100%;
+  }
+  
+  .weather-icons::before,
+  .weather-icons::after,
+  .weather-icons>span:nth-child(3)::before,
+  .weather-icons>span:nth-child(3)::after,
+  .weather-icons>span:nth-child(4)::before,
+  .weather-icons>span:nth-child(4)::after,
+  .weather-icons>span:nth-child(5)::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .weather-icons::before {
+    background-image: url('C:\Users\91999\Desktop\weather\sun.gif');
+  }
+  
+  .weather-icons::after {
+    background-image: url('path/to/image2.png');
+  }
+  
+  .weather-icons>span:nth-child(3)::before {
+    background-image: url('path/to/image3.png');
+  }
+  
+  .weather-icons>span:nth-child(3)::after {
+    background-image: url('path/to/image4.png');
+  }
+  
+  .weather-icons>span:nth-child(4)::before {
+    background-image: url('path/to/image5.png');
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 100%;
+    border: solid;
+    height: 60px;
+    width: 70px;
+    outline: #e3b988;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: solid;
+    outline: #e3b988;
+    padding: 0.5em 0.5em;
+    border-radius: 0;
+    background: #14294a;
+    color: #e3b988;
+    font-family: Papyrus;
+    font-size: 125%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
